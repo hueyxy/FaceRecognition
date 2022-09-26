@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1166</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>人员信息</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="3" column="0">
+     <widget class="QTableWidget" name="all_user_table"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="frame_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>7</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="input_pic">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	font: 16pt &quot;Arial&quot;;
+	border:none;
+	border-radius:10px;
+	width:150px;
+	height:40px;
+	padding-left:5px;
+	padding-right:5px;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+         </property>
+         <property name="text">
+          <string> 导入图片</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>img/pic.png</normaloff>img/pic.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="input_excel">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	font: 16pt &quot;Arial&quot;;
+	border:none;
+	border-radius:10px;
+	width:150px;
+	height:40px;
+	padding-left:5px;
+	padding-right:5px;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+         </property>
+         <property name="text">
+          <string> 导入表格</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>img/excel.png</normaloff>img/excel.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="add_btn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	font: 16pt &quot;Arial&quot;;
+	border:none;
+	border-radius:10px;
+	width:150px;
+	height:40px;
+	padding-left:5px;
+	padding-right:5px;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+         </property>
+         <property name="text">
+          <string>新增</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>img/add.png</normaloff>img/add.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="del_btn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	font: 16pt &quot;Arial&quot;;
+	border:none;
+	border-radius:10px;
+	width:150px;
+	height:40px;
+	padding-left:5px;
+	padding-right:5px;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+         </property>
+         <property name="text">
+          <string>删除</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../img/del.png</normaloff>../img/del.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+height:100px;
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">border:none</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>img/uname.png</normaloff>img/uname.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="user_select">
+         <property name="styleSheet">
+          <string notr="true">border-radius:10px;
+height:30px;
+border:2px solid black;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="styleSheet">
+          <string notr="true">border:none
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>img/record1.png</normaloff>img/record1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="id_select">
+         <property name="styleSheet">
+          <string notr="true">border-radius:10px;
+height:30px;
+border:2px solid black;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="select_btn">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>16</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	font: 16pt &quot;Arial&quot;;
+	border:none;
+	border-radius:10px;
+	width:150px;
+	height:40px;
+	padding-left:5px;
+	padding-right:5px;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+         </property>
+         <property name="text">
+          <string> 搜 索</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>img/search.png</normaloff>img/search.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="pic_input">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/花花/.designer/backup/img/pic.png</normaloff>C:/Users/花花/.designer/backup/img/pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>图片批量导入</string>
+   </property>
+  </action>
+  <action name="excel_input">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/花花/.designer/backup/img/excel.png</normaloff>C:/Users/花花/.designer/backup/img/excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>表格批量导入</string>
+   </property>
+  </action>
+  <action name="select_all">
+   <property name="text">
+    <string>显示所有人员信息</string>
+   </property>
+  </action>
+  <action name="select_today">
+   <property name="text">
+    <string>查询当日通行记录</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

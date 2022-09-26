@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>five</class>
+ <widget class="QMainWindow" name="five">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>986</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>操作指南</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Arial&quot;;
+border:none;</string>
+    </property>
+    <property name="text">
+     <string> 1.人脸识别操作指南</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/opera.png</normaloff>../img/opera.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Arial&quot;;
+border:none;</string>
+    </property>
+    <property name="text">
+     <string> 2.人脸录入操作指南</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/opera.png</normaloff>../img/opera.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>210</y>
+      <width>871</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Adobe Devanagari&quot;;</string>
+    </property>
+    <property name="text">
+     <string>1.批量导入图片，创建文件夹，将人脸图片放入，图片名称为工号_nomask.jpg/工号_mask.jpg
+2.批量导入excel,创键excel表格，标题为工号，用户名
+3.单独导入，输入工号和用户名，首先点击打开按钮，再点击录入不戴口罩人脸照片，完毕后再点击
+录入戴口罩人脸照片按钮即可
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>70</y>
+      <width>671</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Adobe Devanagari&quot;;</string>
+    </property>
+    <property name="text">
+     <string>首先选择摄像头，摄像头选择完毕后点击打开按钮进行人脸识别。
+识别结束后，点击关闭按钮结束识别。</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

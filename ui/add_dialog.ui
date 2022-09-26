@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>add</class>
+ <widget class="QWidget" name="add">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加</string>
+  </property>
+  <widget class="QPushButton" name="cancel_btn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>470</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	border:none;
+	border-radius:5px;
+	color:white;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/cancel.png</normaloff>img/cancel.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	border:none;
+	border-radius:5px;
+	color:white;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>用户名</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/reg_user.png</normaloff>img/reg_user.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomask_pic">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>110</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_username">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入用户名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="input_nomask_pic">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	border:none;
+	border-radius:5px;
+	color:white;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+   </property>
+   <property name="text">
+    <string>不戴口罩照片</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/nomask.png</normaloff>img/nomask.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="input_mask_pic">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	border:none;
+	border-radius:5px;
+	color:white;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+   </property>
+   <property name="text">
+    <string>戴口罩照片</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/maskw.png</normaloff>img/maskw.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_uid">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>60</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入学号</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_btn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>470</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	border:none;
+	border-radius:5px;
+	color:white;
+}
+QPushButton:hover { 
+	background:#FFDC35;
+	border:1px solid blue;
+ }</string>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/save.png</normaloff>img/save.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(25, 197, 254);
+	border:none;
+	border-radius:5px;
+	color:white;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>学 号</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/finduser.png</normaloff>img/finduser.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mask_pic">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>280</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(170, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
